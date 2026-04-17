@@ -1,0 +1,155 @@
+version: 1
+default_profile: classic
+default_triad: architecture
+
+members:
+  aristotle:
+    figure: Aristotle
+    domain: categorization and structure
+  socrates:
+    figure: Socrates
+    domain: assumption destruction
+  sun-tzu:
+    figure: Sun Tzu
+    domain: adversarial strategy
+  ada:
+    figure: Ada Lovelace
+    domain: formal systems and abstraction
+  aurelius:
+    figure: Marcus Aurelius
+    domain: resilience and moral clarity
+  machiavelli:
+    figure: Machiavelli
+    domain: incentives and power dynamics
+  lao-tzu:
+    figure: Lao Tzu
+    domain: emergence and non-forcing
+  feynman:
+    figure: Richard Feynman
+    domain: first-principles debugging
+  torvalds:
+    figure: Linus Torvalds
+    domain: pragmatic engineering
+  musashi:
+    figure: Miyamoto Musashi
+    domain: timing and decisive action
+  watts:
+    figure: Alan Watts
+    domain: reframing and perspective
+
+keyword_triads:
+  architecture: architecture
+  strategy: strategy
+  ethics: ethics
+  debugging: debugging
+  innovation: innovation
+  conflict: conflict
+  complexity: complexity
+  risk: risk
+  shipping: shipping
+  product: product
+  founder: founder
+  unknowns: unknowns
+  market-entry: market-entry
+  system-design: system-design
+  reframing: reframing
+  ship-now: ship-now
+  launch-strategy: launch-strategy
+  stability: stability
+
+profiles:
+  classic:
+    description: Broad deliberation with the full council and the original domain triads.
+    default_triad: architecture
+    panel:
+      - aristotle
+      - socrates
+      - sun-tzu
+      - ada
+      - aurelius
+      - machiavelli
+      - lao-tzu
+      - feynman
+      - torvalds
+      - musashi
+      - watts
+    triads:
+      architecture:
+        members: [aristotle, ada, feynman]
+        rationale: classify, formalize, simplify
+      strategy:
+        members: [sun-tzu, machiavelli, aurelius]
+        rationale: terrain, incentives, integrity
+      ethics:
+        members: [aurelius, socrates, lao-tzu]
+        rationale: duty, interrogation, natural order
+      debugging:
+        members: [feynman, socrates, ada]
+        rationale: bottom-up, assumption test, formal verification
+      innovation:
+        members: [ada, lao-tzu, aristotle]
+        rationale: abstraction, emergence, classification
+      conflict:
+        members: [socrates, machiavelli, aurelius]
+        rationale: expose, predict, ground
+      complexity:
+        members: [lao-tzu, aristotle, ada]
+        rationale: emergence, categories, formalism
+      risk:
+        members: [sun-tzu, aurelius, feynman]
+        rationale: threats, resilience, reality check
+      shipping:
+        members: [torvalds, musashi, feynman]
+        rationale: pragmatism, timing, first principles
+      product:
+        members: [torvalds, machiavelli, watts]
+        rationale: ship, incentives, reframing
+      founder:
+        members: [musashi, sun-tzu, torvalds]
+        rationale: timing, terrain, execution
+
+  exploration-orthogonal:
+    description: Discovery-first panel optimized for unknown unknowns and orthogonal viewpoints.
+    default_triad: unknowns
+    panel:
+      - socrates
+      - feynman
+      - sun-tzu
+      - machiavelli
+      - ada
+      - lao-tzu
+      - aurelius
+      - torvalds
+    triads:
+      unknowns:
+        members: [socrates, lao-tzu, feynman]
+        rationale: assumptions, emergence, mechanism
+      market-entry:
+        members: [sun-tzu, machiavelli, aurelius]
+        rationale: competition, incentives, downside
+      system-design:
+        members: [ada, feynman, torvalds]
+        rationale: invariants, mechanism, implementation
+      reframing:
+        members: [socrates, lao-tzu, ada]
+        rationale: question, subtract, formalize
+
+  execution-lean:
+    description: Smaller panel optimized for faster decision-to-action loops.
+    default_triad: ship-now
+    panel:
+      - torvalds
+      - feynman
+      - sun-tzu
+      - aurelius
+      - ada
+    triads:
+      ship-now:
+        members: [torvalds, feynman, aurelius]
+        rationale: practical correctness with risk guardrails
+      launch-strategy:
+        members: [sun-tzu, torvalds, machiavelli]
+        rationale: go-to-market, execution, incentives
+      stability:
+        members: [ada, feynman, aurelius]
+        rationale: formal correctness, empirical checks, risk control
