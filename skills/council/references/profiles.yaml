@@ -30,6 +30,12 @@ members:
   torvalds:
     figure: Linus Torvalds
     domain: pragmatic engineering
+  elon:
+    figure: Elon Musk
+    domain: first-principles product simplification
+  steve-jobs:
+    figure: Steve Jobs
+    domain: product narrative, taste, and emotional legibility
   musashi:
     figure: Miyamoto Musashi
     domain: timing and decisive action
@@ -53,9 +59,16 @@ keyword_triads:
   market-entry: market-entry
   system-design: system-design
   reframing: reframing
+  narrative: narrative
+  messaging: narrative
+  copy: narrative
+  positioning: narrative
+  launch-copy: narrative
   ship-now: ship-now
   launch-strategy: launch-strategy
   stability: stability
+  simplification: simplification
+  deletion: simplification
 
 profiles:
   classic:
@@ -71,6 +84,8 @@ profiles:
       - lao-tzu
       - feynman
       - torvalds
+      - elon
+      - steve-jobs
       - musashi
       - watts
     triads:
@@ -104,9 +119,15 @@ profiles:
       product:
         members: [torvalds, machiavelli, watts]
         rationale: ship, incentives, reframing
+      narrative:
+        members: [steve-jobs, watts, machiavelli]
+        rationale: taste, reframing, buyer legibility
       founder:
         members: [musashi, sun-tzu, torvalds]
         rationale: timing, terrain, execution
+      simplification:
+        members: [lao-tzu, torvalds, elon]
+        rationale: subtraction, boringness, delete-first
 
   exploration-orthogonal:
     description: Discovery-first panel optimized for unknown unknowns and orthogonal viewpoints.
@@ -120,6 +141,8 @@ profiles:
       - lao-tzu
       - aurelius
       - torvalds
+      - elon
+      - steve-jobs
     triads:
       unknowns:
         members: [socrates, lao-tzu, feynman]
@@ -133,6 +156,12 @@ profiles:
       reframing:
         members: [socrates, lao-tzu, ada]
         rationale: question, subtract, formalize
+      narrative:
+        members: [steve-jobs, watts, socrates]
+        rationale: hook, reframing, assumption test
+      simplification:
+        members: [lao-tzu, torvalds, elon]
+        rationale: remove, simplify, cut to load-bearing parts
 
   execution-lean:
     description: Smaller panel optimized for faster decision-to-action loops.
@@ -143,6 +172,8 @@ profiles:
       - sun-tzu
       - aurelius
       - ada
+      - elon
+      - steve-jobs
     triads:
       ship-now:
         members: [torvalds, feynman, aurelius]
@@ -150,6 +181,12 @@ profiles:
       launch-strategy:
         members: [sun-tzu, torvalds, machiavelli]
         rationale: go-to-market, execution, incentives
+      narrative:
+        members: [steve-jobs, torvalds, machiavelli]
+        rationale: taste, clarity, buyer legibility
       stability:
         members: [ada, feynman, aurelius]
         rationale: formal correctness, empirical checks, risk control
+      simplification:
+        members: [torvalds, feynman, elon]
+        rationale: maintenance cost, reality check, delete-first
